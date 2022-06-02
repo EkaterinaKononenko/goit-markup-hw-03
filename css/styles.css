@@ -19,6 +19,13 @@ ul {
   --main-team-color: #f5f4fa;
   --contacts-color: #757575;
 }
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-right: 30px;
+  padding-left: 30px;
+  outline: 1px solid red;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: var(--header-color);
@@ -34,6 +41,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .logo-nav {
   font-family: "Raleway", sans-serif;
@@ -42,6 +51,8 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--main-color);
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .logo-nav:hover,
 .logo-nav:focus {
@@ -86,6 +97,8 @@ body {
 /*---------Section decision-------------*/
 .hero-part {
   background: var(--header-text-color);
+  padding: 200px 400px 280px 400px;
+  outline: 1px solid red;
 }
 .decision-title {
   font-weight: 900;
@@ -95,6 +108,9 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-bgd-color);
+  margin: 0 auto;
+  max-width: 696px;
+  outline: 1px solid red;
 }
 /*.decision-title:hover {
   color: var(--main-color);
@@ -112,7 +128,9 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  margin: auto;
+  margin-top: 30px;
+  padding: 10px 32px;
+  outline: 1px solid red;
 }
 
 .decision-btn:hover,
@@ -128,6 +146,9 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+  padding-top: 94px;
+  padding-left: 30px;
+  outline: 1px solid red;
 }
 .visually-hidden {
   position: absolute;
@@ -152,6 +173,8 @@ body {
   line-height: 1.71;
   color: var(--contacts-color);
   letter-spacing: 0.03em;
+  margin-top: 10px;
+  outline: 1px solid red;
 }
 .benefits-text:hover,
 .benefits-text:focus {
@@ -174,6 +197,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
+  padding-top: 94px;
+  outline: 1px solid red;
+}
+.works-item {
+  margin-top: 50px;
+  outline: 1px solid red;
 }
 .works-title:hover,
 .works-title:focus {
@@ -189,14 +218,26 @@ body {
   background: var(--main-team-color);
   border-radius: 0px;
   letter-spacing: 0.03em;
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+.team-title {
+  padding-top: 94px;
+  margin-bottom: 50px;
+  outline: 1px solid red;
 }
 .team-title:hover,
 .team-title:focus {
   text-decoration-line: underline;
   text-decoration-color: var(--main-color);
 }
+.team-position {
+  padding-bottom: 108px;
+  text-align: center;
+}
 .team-photo {
   border-radius: 0px;
+  outline: 1px solid red;
 }
 .team-photo:hover,
 .team-photo:focus {
@@ -211,6 +252,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
+  outline: 1px solid red;
 }
 .team-participant:hover,
 .team-participant:focus {
