@@ -54,6 +54,10 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+.list-nav-first {
+  margin-top: 93px;
+  margin-bottom: 331px;
+}
 .logo-nav:hover,
 .logo-nav:focus {
   text-decoration-color: var(--main-color);
@@ -85,6 +89,12 @@ body {
   color: var(--main-color);
   text-decoration-line: underline;
   text-decoration-color: var(--main-color);
+}
+.item-nav {
+  margin-bottom: 50px;
+}
+.contacts-item {
+  margin-bottom: 50px;
 }
 .contacts-link {
   font-weight: 500;
@@ -218,8 +228,6 @@ body {
   background: var(--main-team-color);
   border-radius: 0px;
   letter-spacing: 0.03em;
-  padding-bottom: 94px;
-  padding-top: 94px;
 }
 .team-title {
   padding-top: 94px;
@@ -232,12 +240,17 @@ body {
   text-decoration-color: var(--main-color);
 }
 .team-position {
-  padding-bottom: 108px;
+  text-align: center;
+}
+.team-describe {
+  padding-bottom: 30px;
+  padding-top: 30px;
+  outline: 1px solid red;
+  background-color: var(--main-bgd-color);
   text-align: center;
 }
 .team-photo {
   border-radius: 0px;
-  outline: 1px solid red;
 }
 .team-photo:hover,
 .team-photo:focus {
@@ -252,7 +265,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
-  outline: 1px solid red;
+  margin-bottom: 10px;
 }
 .team-participant:hover,
 .team-participant:focus {
@@ -280,6 +293,9 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   background: var(--header-text-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  outline: 1px solid red;
 }
 .adress-logo {
   font-family: "Raleway", sans-serif;
@@ -288,6 +304,7 @@ body {
   line-height: 1.19;
   color: var(--main-color);
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 .adress-logo:hover,
 .adress-logo:focus {
@@ -302,6 +319,7 @@ body {
   line-height: 2;
   color: var(--main-bgd-color);
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
 }
 .adress-street:hover,
 .adress-street:focus {
@@ -314,6 +332,7 @@ body {
   line-height: 2;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
+  margin-bottom: 9px;
 }
 .adress-mail:hover,
 .adress-mail:focus {
@@ -338,6 +357,13 @@ body {
 }
 
 /*-----------PORTFOLIO------------------*/
+.portfolio-page: {
+  padding-top: 100px;
+  padding-bottom: 94px;
+}
+.portfolio-item {
+  margin-top: 8px;
+}
 .portfolio-btn {
   font-family: inherit;
   font-weight: 500;
@@ -356,8 +382,11 @@ body {
   background: var(--main-color);
   text-decoration-line: underline;
   text-decoration-color: var(--main-color);
+  padding: 6px 22px;
 }
-
+.portfopio-list {
+  margin-bottom: 56px;
+}
 .current-all {
   color: var(--main-bgd-color);
   background-color: var(--main-color);
@@ -373,11 +402,20 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--header-color);
+  margin-bottom: 4px;
 }
 .examples-title:hover,
 .examples-title:focus {
   text-decoration-line: underline;
   text-decoration-color: var(--main-color);
+}
+.examples-item {
+  margin: 30px 30px;
+}
+.examples-box {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: var(--main-bgd-color);
 }
 .examles-describe {
   font-size: 16px;
