@@ -41,9 +41,11 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
 .logo-nav {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -51,12 +53,9 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--main-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
-.list-nav-first {
-  margin-top: 93px;
-  margin-bottom: 331px;
+.list-nav {
+  display: flex;
 }
 .logo-nav:hover,
 .logo-nav:focus {
@@ -65,6 +64,7 @@ body {
 }
 .item-nav .link-nav.link.current {
   color: var(--main-color);
+  margin: 50px;
 }
 .text-decor {
   font-family: "Raleway", sans-serif;
@@ -75,12 +75,19 @@ body {
   letter-spacing: 0.03em;
   color: var(--header-text-color);
 }
-.link-nav {
+.link-nav .link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--header-color);
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.link-nav li {
+  outline: 1px solid red;
 }
 .link-nav:hover,
 .link-nav:focus,
@@ -90,11 +97,14 @@ body {
   text-decoration-line: underline;
   text-decoration-color: var(--main-color);
 }
-.item-nav {
-  margin-bottom: 50px;
+.list-nav .item-nav:not(:last-child) {
+  margin-right: 50px;
 }
-.contacts-item {
-  margin-bottom: 50px;
+.contacts {
+  display: flex;
+}
+.contacts .contacts-item + .contacts-item {
+  margin-left: 50px;
 }
 .contacts-link {
   font-weight: 500;
@@ -138,6 +148,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+
   margin-top: 30px;
   padding: 10px 32px;
   outline: 1px solid red;
@@ -156,6 +167,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
+
   padding-top: 94px;
   padding-left: 30px;
   outline: 1px solid red;
@@ -207,6 +219,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
+
   padding-top: 94px;
   outline: 1px solid red;
 }
@@ -265,6 +278,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--header-color);
+
   margin-bottom: 10px;
 }
 .team-participant:hover,
@@ -293,6 +307,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   background: var(--header-text-color);
+
   padding-top: 60px;
   padding-bottom: 60px;
   outline: 1px solid red;
@@ -319,6 +334,7 @@ body {
   line-height: 2;
   color: var(--main-bgd-color);
   letter-spacing: 0.03em;
+
   margin-bottom: 9px;
 }
 .adress-street:hover,
@@ -332,6 +348,7 @@ body {
   line-height: 2;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
+
   margin-bottom: 9px;
 }
 .adress-mail:hover,
@@ -357,7 +374,7 @@ body {
 }
 
 /*-----------PORTFOLIO------------------*/
-.portfolio-page: {
+.portfolio-page {
   padding-top: 100px;
   padding-bottom: 94px;
 }
@@ -402,6 +419,7 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--header-color);
+
   margin-bottom: 4px;
 }
 .examples-title:hover,
