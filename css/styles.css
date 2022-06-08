@@ -63,6 +63,8 @@ body {
   padding-top: 24px;
   padding-bottom: 25px;
   align-items: center;
+  display: block;
+  margin-right: 93px;
 }
 .site-nav .contacts {
   display: flex;
@@ -70,7 +72,6 @@ body {
 }
 .list-nav {
   display: flex;
-  margin-left: 93px;
   align-items: center;
 }
 .logo-nav:hover,
@@ -79,7 +80,7 @@ body {
   border: 1px solid #ececec;
   border-width: 100%;
 }
-.item-nav .link-nav.link.current {
+.link.current {
   color: var(--main-color);
 }
 .text-decor {
@@ -91,7 +92,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--header-text-color);
 }
-.link-nav .link {
+.link-nav {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -107,11 +108,10 @@ body {
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--main-color);
-  text-decoration-line: underline;
   text-decoration-color: var(--main-color);
 }
-.list-nav .item-nav:not(:last-child) {
-  margin-right: 50px;
+.item-nav + .item-nav {
+  margin-left: 50px;
 }
 .contacts {
   display: flex;
@@ -129,19 +129,13 @@ body {
 }
 /* ------------------ MAIN---------------*/
 /*---------Section decision-------------*/
-.hero-part {
-  background: var(--header-text-color);
-  outline: 1px solid transparent;
-}
 .decision {
   text-align: center;
   padding: 200px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  background: var(--header-text-color);
 }
 .decision-title {
+  margin: 0 auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -195,7 +189,7 @@ body {
   line-height: 1.14;
   text-transform: uppercase;
   letter-spacing: 0.03em;
-  outline: 1px solid red;
+  outline: 1px solid transparent;
   display: block;
   display: flex;
   flex-basis: calc(100% / 4 - 30px);
@@ -225,7 +219,7 @@ body {
   color: var(--contacts-color);
   letter-spacing: 0.03em;
   margin-top: 10px;
-  outline: 1px solid red;
+  outline: 1px solid transparent;
   display: block;
   flex-basis: calc(100% / 4 - 30px);
   margin-right: 30px;
@@ -467,9 +461,13 @@ img {
 }
 .portfolio-list {
   justify-content: center;
+  margin-bottom: 50px;
 }
-
 .portfolio-item {
+  margin-right: 8px;
+}
+.portfolio-item:last-child {
+  margin-right: 0;
 }
 .portfolio-btn {
   font-family: inherit;
@@ -482,8 +480,7 @@ img {
   background: #f5f4fa;
   border-radius: 4px;
   cursor: pointer;
-  margin-bottom: 50px;
-  margin-right: 8px;
+  padding: 6px 22px;
 }
 .portfolio-btn:hover,
 .portfolio-btn:hover {
