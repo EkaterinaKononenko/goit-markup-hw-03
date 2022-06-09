@@ -127,6 +127,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--contacts-color);
 }
+ul.contacts.link {
+  color: #212121;
+}
 /* ------------------ MAIN---------------*/
 /*---------Section decision-------------*/
 .decision {
@@ -481,6 +484,7 @@ img {
   border-radius: 4px;
   cursor: pointer;
   padding: 6px 22px;
+  border: none;
 }
 .portfolio-btn:hover,
 .portfolio-btn:hover {
@@ -506,6 +510,7 @@ img {
 .examples-item {
   margin: 15px;
   width: calc(100% / 3 - 30px);
+  font-family: "Roboto", sans-serif;
 }
 
 /*.examples-item:nth-child(3n) {
